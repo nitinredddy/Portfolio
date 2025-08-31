@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <section id="home" class="section home-section">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi, I’m Nitin Reddy, a Full-Stack web Developer.</p>
+  </section>
+
+  <section id="about" class="section about-section">
+    <h2>About Me</h2>
+    <p>I am passionate about creating modern, responsive websites and applications with clean design and smooth user experience.</p>
+  </section>
+
+  <section id="projects" class="section projects-section">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <article class="project">
+        <img src="project1.jpg" alt="Project 1 Screenshot" />
+        <div class="project-info">
+          <h3>Project One</h3>
+          <p>A responsive website built using HTML, CSS, and JavaScript.</p>
+        </div>
+      </article>
+      <article class="project">
+        <img src="project2.jpg" alt="Project 2 Screenshot" />
+        <div class="project-info">
+          <h3>Project Two</h3>
+          <p>An interactive web app with API integration.</p>
+        </div>
+      </article>
+      <article class="project">
+        <img src="project3.jpg" alt="Project 3 Screenshot" />
+        <div class="project-info">
+          <h3>Project Three</h3>
+          <p>A portfolio CMS built with React and Node.js.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br />
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="4" required></textarea><br />
+      <button type="submit">Send</button>
+    </form>
+    <div id="map" aria-label="Google Map location"></div>
+  </section>
+
+  <script src="script.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    async
+    defer
+  ></script>
+</body>
+</html>
